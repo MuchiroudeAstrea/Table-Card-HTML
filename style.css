@@ -1,0 +1,144 @@
+body {
+  font-family: SJ Billy, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-image: url("background.jpg"); /* Đường dẫn tới tệp hình nền */
+  background-size: cover; /* Làm cho hình nền bao phủ toàn bộ trang */
+  background-position: center; /* Căn chỉnh hình nền ở giữa trang */
+}
+
+/* Ô chữ nhật bao quanh bảng */
+.table-wrapper {
+  max-width: 1300px; /* Giới hạn chiều rộng tối đa của ô bao quanh */
+  width: 100%; /* Cho phép ô bao quanh co giãn theo chiều rộng của màn hình */
+  margin: 0 auto; /* Căn giữa ô trong trang */
+  background-color: #e7e7de; /* Màu nền trắng cho ô bao quanh */
+  border: 10px solid #6356568e; /* Viền cho ô chữ nhật */
+  border-radius: 15px; /* Bo góc cho ô chữ nhật */
+  padding: 27px; /* Khoảng cách giữa bảng và viền */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ cho ô */
+  position: relative; /* Để hình ảnh có thể được căn chỉnh tương đối với .table-wrapper */
+}
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8); /* Nền trong suốt 60% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+thead {
+  background-color: rgb(92, 82, 51); /* Nền tiêu đề bảng màu xanh dương nhạt */
+  color: white;
+  font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: Roboto Slab;
+  border: none; /* Bỏ viền mặc định */
+  border-radius: 5px; /* Bo góc */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Thay đổi con trỏ khi di chuột */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tr:hover td {
+  background-color: #f1f1f1; /* Màu nền khi di chuột qua hàng */
+}
+
+table,
+th,
+td {
+  border-radius: 10px; /* Bo góc cho bảng và các ô */
+}
+
+button:hover {
+  background-color: #bb8522; /* Màu nền khi di chuột */
+  transform: scale(1.05); /* Phóng to nút một chút */
+}
+
+button {
+  font-family: Roboto Slab "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #7f44a7;
+}
+
+button:active {
+  transform: scale(1); /* Khi nút được nhấn, giảm kích thước */
+}
+td {
+  word-wrap: break-word; /* Đảm bảo nội dung dài sẽ xuống dòng */
+  max-width: 300px; /* Giới hạn độ rộng cho cột "Chức năng của thẻ" */
+}
+h1 {
+  font-size: 50px;
+}
+/* Định dạng hình ảnh capybara */
+.capybara-image {
+  position: absolute;
+  width: 100px; /* Kích thước hình ảnh */
+  height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+/* Hình ảnh ở góc trên bên trái */
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+/* Hình ảnh ở góc trên bên phải */
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+/* Hình ảnh ở góc dưới bên trái */
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Hình ảnh ở góc dưới bên phải */
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+.highlight-green {
+  background-color: #16b123; /* Màu xanh lá cây nhạt */
+  transition: background-color 0.7s ease; /* Hiệu ứng chuyển màu */
+}
+tr.highlight-green:hover td {
+  background-color: #d4edda; /* Vẫn giữ màu xanh lá cây khi hover */
+}
+
+tr:not(.highlight-green):hover td {
+  background-color: #f1f1f1; /* Chỉ áp dụng màu hover nếu không có highlight-green */
+}
