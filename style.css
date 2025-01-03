@@ -2,7 +2,7 @@ body {
   font-family: SJ Billy, sans-serif;
   text-align: center;
   margin: 20px;
-  background-image: url("background.jpg"); /* Đường dẫn tới tệp hình nền */
+  background-image: url("image/background.jpg"); /* Đường dẫn tới tệp hình nền */
   background-size: cover; /* Làm cho hình nền bao phủ toàn bộ trang */
   background-position: center; /* Căn chỉnh hình nền ở giữa trang */
 }
