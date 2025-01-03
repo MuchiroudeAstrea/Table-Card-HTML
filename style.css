@@ -69,6 +69,8 @@ button {
   font-size: 16px; /* Kích thước chữ */
   cursor: pointer; /* Thay đổi con trỏ khi di chuột */
   transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: Roboto Slab Bold, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #7f44a7;
 }
 
 tr:hover td {
@@ -84,11 +86,6 @@ td {
 button:hover {
   background-color: #bb8522; /* Màu nền khi di chuột */
   transform: scale(1.05); /* Phóng to nút một chút */
-}
-
-button {
-  font-family: Roboto Slab "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #7f44a7;
 }
 
 button:active {
@@ -141,4 +138,45 @@ tr.highlight-green:hover td {
 
 tr:not(.highlight-green):hover td {
   background-color: #f1f1f1; /* Chỉ áp dụng màu hover nếu không có highlight-green */
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .capybara-image {
+    width: 70px;
+  }
+
+  td,
+  th {
+    font-size: 1.5em;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .capybara-image {
+    width: 50px;
+  }
+  td,
+  th {
+    font-size: 1em;
+  }
+  table {
+    font-size: 12px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 5px;
+  }
 }
